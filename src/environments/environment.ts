@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://api.epathos.test.builders:1973/',
+  apiUrl: 'http://localhost:1994/',
 
 };
 

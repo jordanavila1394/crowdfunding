@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
   imports: [
     CommonModule,
     IonicModule.forRoot(),
-    SharedRoutingModule
+    SharedRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports:[
     DefaultLayoutComponent

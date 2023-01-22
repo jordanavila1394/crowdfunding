@@ -1,3 +1,22 @@
-<p>
-  login works!
-</p>
+<form class="base--form-generic" [formGroup]="signInForm" (ngSubmit)="onSubmitSignIn()">
+  <ion-row>
+    <h3> Welcome Back!</h3>
+  </ion-row>
+  <ion-row>
+    <h5>Please fill in correct details</h5>
+  </ion-row>
+  <ion-item lines="none">
+    <ion-icon src='assets/images/icons/email.svg' ></ion-icon>
+    <ion-input type="email" formControlName="email"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-icon src='assets/images/icons/password.svg' ></ion-icon>
+    <ion-input type="password" formControlName="password"></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-button class="base--btn-primary" type="submit"  expand="block" [disabled]="!signInForm.valid" >Sign Up</ion-button>
+  </ion-row>
+  <ion-row>
+    <h5> No account? <a [routerLink]="['/register']" >Register</a></h5>
+  </ion-row>
+</form>

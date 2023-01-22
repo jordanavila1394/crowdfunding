@@ -1,0 +1,36 @@
+.base--{
+  &form-generic{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    ion-row{
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    ion-item{
+      ion-icon{
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+      }
+      ion-input{
+        background: #FFFFFF;
+        border: 1px solid #D6E1E8;
+        border-radius: 8px;
+        height: 56px;
+        &:focus-within{
+          border: 2px solid #397193;
+
+        }
+        input{
+          height: 56px;
+          padding: 10px!important;
+          border-radius: 8px!important;
+
+        }
+      }
+    }
+  }
+}
