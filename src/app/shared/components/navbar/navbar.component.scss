@@ -1,0 +1,35 @@
+#navbar{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  background-color: var(--ion-color-grey);
+  z-index:10;
+  .items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 32px;
+      }
+      .title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
