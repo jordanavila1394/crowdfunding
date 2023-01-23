@@ -1,9 +1,9 @@
 <ion-header *ngIf="(authState$ | async); let authState;" >
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button default-href="#"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Header</ion-title>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons> -->
+    <ion-title>{{pageTitle}}</ion-title>
     <ion-buttons slot="primary" *ngIf="authState?.user;">
       <ion-button>
         <ion-menu-button></ion-menu-button>

@@ -11,13 +11,26 @@
   src: url("../../assets/fonts/Inter/Inter-Regular.ttf"); //change url accordingly
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf"); //change url accordingly
+}
+@font-face {
+  font-family: Jost;
+  src: url("../../assets/fonts/Jost/Jost-Regular.ttf"); //change url accordingly
+}
+
 :root {
   --ion-primary-font-family: 'JosefinSans';
   --ion-secondary-font-family: 'Inter';
+  --ion-roboto-font-family: 'Roboto';
+  --ion-jost-font-family: 'Jost';
 
   /*Greys*/
   --ion-color-grey: #F3F4F9;
+  --ion-color-grey2: #c2c2c2;
 
+  --ion-color-blue: #001C38;
   //Backgrounds
   --ion-color-grey-bg: linear-gradient(133.43deg, rgba(28, 52, 91, 0.02) 26.29%, rgba(23, 73, 151, 0.0118) 72.9%);
 
@@ -26,8 +39,8 @@
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #31e048;
-  --ion-color-primary-tint: #4cff6a;
+  --ion-color-primary-shade: #a2b567;
+  --ion-color-primary-tint: #c2e558;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;

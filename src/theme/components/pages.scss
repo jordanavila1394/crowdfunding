@@ -1,0 +1,25 @@
+.base--{
+  &page-content{
+    margin-top: -5%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    height: 140vh;
+    background: #FFFF;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    .title{
+      font-family: var(--ion-primary-font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 36px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #364C6F;
+    }
+    .input-field{
+
+    }
+  }
+}

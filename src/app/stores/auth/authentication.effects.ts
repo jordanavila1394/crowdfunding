@@ -45,7 +45,7 @@ export class AuthEffects {
     () =>
       this.actions$.pipe(
         ofType(loginSuccess),
-        tap(() => this.router.navigate([ROUTES.ROUTES_HOME]))
+        tap(() => this.router.navigate([ROUTES.ROUTE_HOME]))
       ),
     { dispatch: false }
   );
@@ -74,7 +74,7 @@ export class AuthEffects {
       this.actions$.pipe(
         ofType(loginRedirect, logout),
         tap(() => {
-          this.router.navigate([ROUTES.ROUTES_LOGIN]);
+          this.router.navigate([ROUTES.ROUTE_LOGIN]);
         })
       ),
     { dispatch: false }

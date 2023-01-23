@@ -32,6 +32,24 @@
           border-radius: 8px!important;
           color:#364C6F!important;
         }
+        &.slim{
+          height: 44px;
+          input{
+            height: 44px;
+          }
+        }
+      }
+      ion-select{
+        background: #FFFFFF;
+        border: 2px solid #D6E1E8;
+        border-radius: 8px;
+        width: 100%;
+        padding: 10px!important;
+        color:#364C6F!important;
+
+        .select-text, label{
+          color:#364C6F!important;
+        }
       }
     }
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-dash-home',
@@ -7,8 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashHomeComponent implements OnInit {
 
-  constructor() { }
+  public searchCampaigns : FormGroup;
+
+
+  constructor(
+    private fb: FormBuilder,
+    ) {
+      this.searchCampaigns = this.fb.group({
+        search: ['', Validators.required],
+      });
+
+    }
 
   ngOnInit() {}
 
+  onSubmitSearch() {
+
+  }
 }

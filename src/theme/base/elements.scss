@@ -3,7 +3,9 @@ body{
   background: var(--ion-color-grey-bg);
   font-family: var(--ion-primary-font-family);
 }
-
+.ion-page{
+  overflow-y: scroll;
+}
 h3
 {
   font-style: normal;

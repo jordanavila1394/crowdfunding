@@ -1,7 +1,7 @@
 export const ROUTES_DASHBOARD = [
   "/dashboard",
   "/campaigns",
-  "/dash-home",
+  "/home",
   "/settings",
 ]
 export const ROUTES_HOMES = [
@@ -11,7 +11,9 @@ export const ROUTES_HOMES = [
 ]
 
 export const ROUTES = {
-  ROUTES_HOME:"/dash-home",
-  ROUTES_LOGIN:"/login",
-  ROUTE_DASHBOARD: "/dashboard"
+  ROUTE_HOME:"home",
+  ROUTE_LOGIN:"login",
+  ROUTE_DASHBOARD: "dashboard",
+  ROUTE_CAMPAIGNS: "campaigns",
+  ROUTE_SETTINGS: "settings",
 }
