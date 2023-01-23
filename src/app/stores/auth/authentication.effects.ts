@@ -23,6 +23,7 @@ import { AuthenticationService } from '../../services/auth/authentication.servic
 
 import { ROUTES } from '../../utils/constants'
 // import { ToastrService } from 'ngx-toastr';
+import { ToastController } from '@ionic/angular';
 
 
 @Injectable()
@@ -45,6 +46,15 @@ export class AuthEffects {
       this.actions$.pipe(
         ofType(loginSuccess),
         tap(() => this.router.navigate([ROUTES.ROUTES_HOME]))
+      ),
+    { dispatch: false }
+  );
+
+  loginFailure$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(loginFailure),
+        tap(() => console.log("loginfail"))
       ),
     { dispatch: false }
   );
@@ -99,10 +109,43 @@ export class AuthEffects {
       )
     )
   );
+  registerSuccess$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(registerSuccess),
+        tap(async () => {
+          const toast = this.toastController.create({
+            message: 'Account created',
+            duration: 1500,
+            position: "top",
+            color:"success"
+          });
+          (await toast).present();
+        } )
+      ),
+    { dispatch: false }
+  );
 
+  registerFailure$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(registerFailure),
+        tap(async () => {
+          const toast = this.toastController.create({
+            message: 'Register failed',
+            duration: 1500,
+            position: "top",
+            color:"danger"
+          });
+          (await toast).present();
+        } )
+      ),
+    { dispatch: false }
+  );
   constructor(
     private actions$: Actions,
     private authService: AuthenticationService,
+    private toastController: ToastController,
     private router: Router,
   ) {}
 }

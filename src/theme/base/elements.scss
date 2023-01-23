@@ -1,10 +1,11 @@
-.main-background
-{
+
+body{
   background: var(--ion-color-grey-bg);
+  font-family: var(--ion-primary-font-family);
 }
+
 h3
 {
-  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -13,7 +14,6 @@ h3
 }
 h5
 {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

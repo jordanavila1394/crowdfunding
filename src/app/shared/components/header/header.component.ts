@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { AuthState } from '../../../stores/auth/authentication.reducer';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-header',
@@ -6,8 +10,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  authState$: Observable<AuthState>;
 
-  constructor() { }
+  constructor(
+    private store: Store<{ authState: AuthState }>
+    ) {
+      this.authState$ = store.select('authState');
+    }
 
   ngOnInit() {}
 

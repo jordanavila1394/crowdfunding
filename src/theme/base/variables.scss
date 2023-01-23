@@ -2,15 +2,27 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+@font-face {
+  font-family: JosefinSans;
+  src: url("../../assets/fonts/JosefinSans/JosefinSans-Regular.ttf"); //change url accordingly
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/Inter/Inter-Regular.ttf"); //change url accordingly
+}
+
 :root {
+  --ion-primary-font-family: 'JosefinSans';
+  --ion-secondary-font-family: 'Inter';
+
   /*Greys*/
   --ion-color-grey: #F3F4F9;
 
   //Backgrounds
   --ion-color-grey-bg: linear-gradient(133.43deg, rgba(28, 52, 91, 0.02) 26.29%, rgba(23, 73, 151, 0.0118) 72.9%);
-  
+
   /** primary **/
-  --ion-color-primary: #38ff56;
+  --ion-color-primary: #D2E892;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;

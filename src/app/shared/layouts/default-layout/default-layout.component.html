@@ -1,4 +1,10 @@
 <ion-app>
-  <ion-router-outlet class="main-background"></ion-router-outlet>
+  <app-sidebar></app-sidebar>
+  <div class="ion-page" id="main-content">
+    <app-header></app-header>
+    <ion-content class="ion-padding">
+      <ion-router-outlet  [animated]="false" class="main-background"></ion-router-outlet>
+    </ion-content>
+  </div>
   <app-navbar></app-navbar>
 </ion-app>

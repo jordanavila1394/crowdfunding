@@ -8,11 +8,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     DefaultLayoutComponent,
     HeaderComponent,
+    SidebarComponent,
     NavbarComponent
   ],
   imports: [

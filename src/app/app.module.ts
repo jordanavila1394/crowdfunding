@@ -22,6 +22,7 @@ import { environment } from '../environments/environment';
 
 //Routing
 import { AuthModule } from './pages/auth/auth.module';
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -36,6 +37,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     RouterModule,
     SharedModule,
     AuthModule,
+    DashboardModule,
     RouterModule.forRoot([]),
     StoreModule.forRoot(reducers,{metaReducers}),
     StoreDevtoolsModule.instrument({

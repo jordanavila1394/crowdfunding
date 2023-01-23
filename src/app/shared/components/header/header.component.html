@@ -1,3 +1,13 @@
-<p>
-  header works!
-</p>
+<ion-header *ngIf="(authState$ | async); let authState;" >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Header</ion-title>
+    <ion-buttons slot="primary" *ngIf="authState?.user;">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
